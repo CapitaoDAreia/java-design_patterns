@@ -7,6 +7,18 @@ import br.com.cod3r.builder.meal.after.builder.Menu1Builder;
 import br.com.cod3r.builder.meal.after.builder.Menu2Builder;
 import br.com.cod3r.builder.meal.after.director.MealDirector;
 
+//Todo: Builder review
+/*
+	A intenção do Builder é propor uma forma de criar diferentes representações
+	de um um objeto a partir de uma mesma classe.
+	- Neste exemplo em específico, temos essa implementação representada no relacionamento
+	entre um client, uma classe diretora (que conhece todos os detalhes sobre a construção 
+	das diferentes representações) e uma classe construtora, que possui as informações do que
+	será construído.
+	- A classe diretora recebe o construtor, e fornece o método de construção, que neste caso
+	construíra uma refeição específica baseada no construtor recebido pela diretora.
+*/
+
 public class Client {
 	
 	public static void order(String name, FastFoodMealBuilder builder) {
