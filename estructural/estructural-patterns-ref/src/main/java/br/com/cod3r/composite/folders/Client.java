@@ -8,6 +8,17 @@ import java.util.List;
 import br.com.cod3r.composite.folders.model.FileSystemItem;
 import br.com.cod3r.composite.folders.model.Folder;
 
+// TODO: Composite review
+/*
+	- O padrão composite possui como intenção a composição de objetos em estruturas de árvore para representarem 
+	hierarquias partes-todo. Permite aos clientes tratarem de mandeira uniforme objetos individuais e composições de objetos.
+	- Para um entendimento mais acurado da intenção desse padrão, podemos tomar como exemplo as pastas e arquivos de um gerenciador
+	de arquivos em um sistema operacional. Para o cliente, é possível mover, deletar, copiar ambos, etc, sem se preocupar
+	se se trata de uma pasta ou um arquivo. São operações comuns às ambas entidades.
+	- Isso pode ser alcançado quando essas duas classes, arquivos e pastas, implementam uma interface em comum, por exemplo,
+	a interface 'FileSystem', que permite com que todas essas operações incidam sobre elas e/ou suas composições.
+*/
+
 public class Client {
 
 	public static FileSystemItem createCompositeFromFile(File file) {
