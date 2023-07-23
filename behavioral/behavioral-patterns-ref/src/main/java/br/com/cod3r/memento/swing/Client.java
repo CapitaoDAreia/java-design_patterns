@@ -14,6 +14,18 @@ import br.com.cod3r.memento.swing.component.TextAreaWithMemory;
 import br.com.cod3r.memento.swing.component.TextAreaWithMemory.TextAreaMemento;
 import br.com.cod3r.memento.swing.memory.Caretaker;
 
+// TODO: review Memento
+/*
+	- A intenção do padrão memento é oferecer uma forma de armazenar o estado
+	de um determinado objeto para que seja possível restaurá-lo e utilizá-lo
+	para algum fim posteriormente. 
+	- No exemplo em questão, temos uma interface gráfica com um textArea que
+	possilita salvar o texto atual e restaurá-lo posteriormente. O salvamento
+	acontece com o auxílio de um caretaker, que recebe e armazena os estados em uma
+	lista. Posterior a isso, é possível percorrer essa lista de estados e restaurar
+	cada um deles.
+*/
+
 public class Client {
 
 	public static void main(String[] args) {
