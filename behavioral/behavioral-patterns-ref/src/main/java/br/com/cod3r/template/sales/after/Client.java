@@ -8,6 +8,18 @@ import br.com.cod3r.template.sales.after.model.Category;
 import br.com.cod3r.template.sales.after.model.Product;
 import br.com.cod3r.template.sales.after.service.BestOfferService;
 
+//Todo: review Template Method
+
+/*
+	A intenção do Padrão Template Method é definir o esqueleto deum algoritmo dentro de uma operação, deixando
+	alguns passos a serem preenchidos pelas subclasses. Template Method permite que suas subclasses redefinam
+	certos passos de um algoritmo sem mudar sua estrutura.
+	- Neste caso em questão, isso acontece quando a classe abstrata BestOfferTemplate possui métodos implementados
+	e métodos que devem ser implementados pelas subclasses. Cada subclasse possui liberdade de implementar os métodos
+	que precisam da sua maneira, permitindo que hajam diferentes tipos de Templates. Já no BestOfferService, esses
+	templates serão utilizados de acordo com o caso específico.
+*/
+
 public class Client {
 
 	public static void main(String[] args) {
